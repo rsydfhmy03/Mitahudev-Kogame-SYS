@@ -13,10 +13,10 @@ import Certifications from '../components/apps/Certifications';
 // ==========================================
 export const SYSTEM_ASSETS = {
   // File located at: public/assets/images/walpaper.png
-  WALLPAPER: '/assets/images/walpaper.png',
+  WALLPAPER: '/assets/images/walpaper/dev3.png',
   // You can replace this with your actual photo path, e.g., '/assets/images/avatar.jpg'
   // using a high-quality placeholder for now that fits the aesthetic
-  PROFILE_PIC: 'https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=1000&auto=format&fit=crop', 
+  PROFILE_PIC: '/assets/images/avatar/profile.png', 
 };
 
 // ==========================================
