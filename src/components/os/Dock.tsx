@@ -20,7 +20,7 @@ const Dock: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-[95vw] sm:max-w-fit overflow-x-auto sm:overflow-visible no-scrollbar">
+    <div className="fixed bottom-1 left-1/2 -translate-x-1/2 z-50 w-full max-w-[95vw] sm:max-w-fit overflow-x-auto sm:overflow-visible no-scrollbar">
       <div className="flex items-end justify-center gap-2 md:gap-3 px-2 md:px-4 py-2 md:py-3 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl min-w-fit mx-auto">
         {APP_REGISTRY.map((app) => {
           const isOpen = windows[app.id].isOpen;
@@ -43,7 +43,7 @@ const Dock: React.FC = () => {
               <button
                 onClick={() => handleAppClick(app.id)}
                 className={`
-                  w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0
+                  w-11 h-11 md:w-12 md:h-12 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0
                   ${isActive && !isMinimized
                     ? 'bg-cursed-cyan text-black shadow-[0_0_15px_#00f0ff]' 
                     : 'bg-white/10 text-gray-300 hover:bg-white/20'}

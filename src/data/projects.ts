@@ -45,7 +45,7 @@ Key Contributions:
       { type: 'image', url: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000&auto=format&fit=crop', caption: 'Admin Dashboard' }
     ],
     isConfidential: true,
-    demoLink: 'https://mmct.malangkota.go.id/', 
+    demoLink: 'https://mmct.mcf.or.id/', 
   },
   {
     id: 'proj_soothemate',

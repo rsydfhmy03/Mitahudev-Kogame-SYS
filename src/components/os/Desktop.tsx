@@ -33,7 +33,8 @@ const Desktop: React.FC = () => {
                 <img 
                 src={SYSTEM_ASSETS.WALLPAPER} 
                 alt="Wallpaper" 
-                className="w-full h-full object-cover opacity-60"
+                fetchPriority="high"
+                className="w-full h-full object-cover object-[center_20%] opacity-100 transition-opacity duration-700"
                 onError={() => {
                     // Removed event object 'e' from console.warn to avoid circular JSON error
                     console.warn(`Wallpaper failed to load from: ${SYSTEM_ASSETS.WALLPAPER}`);
@@ -42,12 +43,12 @@ const Desktop: React.FC = () => {
                 />
             ) : (
                 // Fallback gradient if image fails (Cyberpunk purple/blue)
-                <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] opacity-80" />
+                <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]" />
             )}
           </motion.div>
           
           {/* Overlay reduced slightly to make wallpaper more visible */}
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+          {/* <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" /> */}
       </div>
 
       {/* Dynamic Animated Orbs */}

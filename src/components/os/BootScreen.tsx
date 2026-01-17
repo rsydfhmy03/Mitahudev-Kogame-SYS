@@ -8,13 +8,13 @@ const BootScreen: React.FC = () => {
 
   useEffect(() => {
     const sequence = async () => {
-      await new Promise((r) => setTimeout(r, 800));
+      await new Promise((r) => setTimeout(r, 500));
       setStep(1); // "INITIALIZING BARRIER"
-      await new Promise((r) => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 600));
       setStep(2); // "LOADING CURSED ENERGY"
-      await new Promise((r) => setTimeout(r, 1200));
+      await new Promise((r) => setTimeout(r, 750));
       setStep(3); // "KOGANE SYSTEM ONLINE"
-      await new Promise((r) => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 850));
       setBooting(false);
     };
     sequence();
@@ -29,6 +29,7 @@ const BootScreen: React.FC = () => {
         <AnimatePresence>
           {step >= 0 && (
             <motion.div
+              key="step-0"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="flex justify-between border-b border-cursed-cyan/30 pb-2"
@@ -39,6 +40,7 @@ const BootScreen: React.FC = () => {
           )}
           {step >= 1 && (
             <motion.div
+              key="step-1"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-sm text-gray-400"
@@ -48,6 +50,7 @@ const BootScreen: React.FC = () => {
           )}
           {step >= 2 && (
             <motion.div
+              key="step-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-sm text-gray-400"
@@ -57,6 +60,7 @@ const BootScreen: React.FC = () => {
           )}
           {step >= 3 && (
             <motion.div
+              key="step-3"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               className="mt-8 text-center text-2xl font-bold tracking-widest text-cursed-red animate-pulse"

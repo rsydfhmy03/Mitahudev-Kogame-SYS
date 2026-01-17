@@ -4,7 +4,7 @@ import { useOS } from '../../context/OSContext';
 
 const INITIAL_LINES: TerminalLine[] = [
   { type: 'output', content: 'Mitahudev OS [Version 1.0.4]' },
-  { type: 'output', content: '(c) 2025 Sorcerer Corp. All rights reserved.' },
+  { type: 'output', content: '(c) 2026 Sorcerer Corp. All rights reserved.' },
   { type: 'output', content: '' },
   { type: 'success', content: 'Connected to Colony Server.' },
   { type: 'output', content: 'Type "help" for a list of commands.' },

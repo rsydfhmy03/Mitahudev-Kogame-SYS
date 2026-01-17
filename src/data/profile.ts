@@ -35,7 +35,7 @@ export const PROFILE_DATA: ProfileData = {
     linkedin: "https://www.linkedin.com/in/mitahudev03",
     instagram: "https://www.instagram.com/mitahudev.03"
   },
-  cvUrl: "#", 
+  cvUrl: "/assets/pdf/cv.pdf", 
   stats: [
     { label: 'CURSED ENERGY (Backend)', value: 92, color: '#ff003c' },
     { label: 'DOMAIN (Cloud)', value: 88, color: '#a855f7' },
