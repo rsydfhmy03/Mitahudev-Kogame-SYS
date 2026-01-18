@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Folder, FileCode, ChevronRight, ArrowLeft, ExternalLink, Github, Eye, Lock, Layers, Cpu, Cloud, Smartphone, Database, Building2, Calendar, PlayCircle } from 'lucide-react';
+import { Folder, FileCode, ChevronRight, ArrowLeft, ExternalLink, Github, Eye, Lock, Layers, Cpu, Cloud, Smartphone, Database, Building2, Calendar, PlayCircle, Brain, Radio } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PROJECTS_DATA } from '../../../data/projects';
 import { Project, ProjectCategory } from '../../../types/content.types';
@@ -9,9 +9,9 @@ const CATEGORIES: { id: ProjectCategory; name: string; icon: any }[] = [
   { id: 'Backend', name: 'Backend', icon: Database },
   { id: 'Frontend', name: 'Frontend', icon: Layers },
   { id: 'Mobile', name: 'Mobile', icon: Smartphone },
-  { id: 'AI/ML', name: 'AI / Machine Learning', icon: Cpu },
+  { id: 'AI/ML', name: 'AI / Deep Learning', icon: Brain },
   { id: 'Cloud', name: 'Cloud Computing', icon: Cloud },
-  { id: 'IoT', name: 'Internet of Things', icon: Layers }, // Using Layers as generic for IoT
+  { id: 'IoT', name: 'Internet of Things', icon: Radio }, // Using Radio as generic for IoT
 ];
 
 const Projects: React.FC = () => {
